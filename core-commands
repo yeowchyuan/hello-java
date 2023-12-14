@@ -1,0 +1,12 @@
+##package into jar
+./mvnw package
+
+
+##test jar
+java -jar .\target\kwan-0.0.1-SNAPSHOT.jar
+
+##build image
+docker build -t kwanyc/hellokwan:v1 .
+
+##push image
+docker push kwanyc/hellokwan:v1
